@@ -1,7 +1,8 @@
 ---
 title: 回归与分类
 date: 2017-04-18 23:34:14
-tags:
+category: 笔记
+tags: softmax, logistic, regression, linear
 mathjax2: true
 ---
 ### 线性回归(Linear Regression)
@@ -20,12 +21,12 @@ mathjax2: true
 对 `$\theta$` 求二阶导数:
 `$$ Cost''(\theta) = x^2 > 0 $$`
 
-可见 Cost Function 为凸函数，采用梯度下降法进行逼近学习时，不会陷入到局部最优点。
+可见 Cost Function 为凸函数，不会陷入到局部最优点。
 
 
 ### 逻辑回归(Logistic Regression)与分类
 
-引入 Sigmoid(logistic) Function, 使 `$h_\theta(x)$` 归一化，即: `$ 0 < h_\theta(x)$ <= 1 $`:
+引入 Sigmoid(logistic) Function, 使 `$h_\theta(x)$` 归一化，即: `$ 0 < h_\theta(x) < 1 $`:
 `$$ g(x) = \frac{1}{1 + e^{-x}} $$`
 
 估值函数(Hypothesis Function):
@@ -52,7 +53,7 @@ Cost(h_\theta(x), y) = \begin{cases}
 对 `$\theta$` 求二阶导数:
 `$$ Cost''(\theta) = x^2e^{\theta x} + 2x^2e^{2\theta x} > 0 $$`
 
-所以 Cost Function 也是凸函数，可以采用梯度下降法进行逼近，而不会陷入到局部最优点。
+所以 Cost Function 是凸函数，不会陷入到局部最优点。
 
 ### 基于 Logistic Regressioin 对多类别分类
 
