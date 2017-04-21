@@ -1,8 +1,8 @@
 ---
 title: 回归与分类
 date: 2017-04-18 23:34:14
-category: 笔记
-tags: softmax, logistic, regression, linear
+category: 机器学习
+tags: [softmax, 逻辑回归, 线性回归]
 mathjax2: true
 ---
 ### 线性回归(Linear Regression)
