@@ -1,13 +1,12 @@
 ---
 title: 神经网络
 date: 2017-04-20 20:02:46
-category: 机器学习
+category: 机器学习笔记
 tags: ["神经网络", "反向传播"]
 ---
-{% abstract_start %}
 {% asset_img "Neural_Network.svg" "一个4层神经网络（2个隐层）"%}
-{% abstract_stop %}
 
+<!-- more -->
 
 假设 `$l$` 层有 `$m$` 个节点作出输入单元，`$l+1$` 层有 `$n$` 个节点作为输出单元，则:
 {% math %}

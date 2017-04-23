@@ -1,7 +1,7 @@
 ---
 title: 回归与分类
 date: 2017-04-18 23:34:14
-category: 机器学习
+category: 机器学习笔记
 tags: [softmax, 逻辑回归, 线性回归]
 mathjax2: true
 ---
@@ -14,6 +14,8 @@ mathjax2: true
 `$$ J(\theta) = \frac{1}{m}\sum_{i=1}^{m}Cost(h_\theta(x^{(i)}), y^{(i)}) $$`
 
 `$$ Cost(h_\theta(x), y) = \frac{1}{2}(h_\theta(x) - y)^2 $$`
+
+<!-- more -->
 
 对 `$\theta$` 求一阶导数:
 `$$ Cost'(\theta) = (h_x(\theta) - y) \cdot h_x'(\theta) = x^2\theta - xy $$`
