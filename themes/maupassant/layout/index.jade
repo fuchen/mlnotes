@@ -26,6 +26,7 @@ block content
         .post-content
           != post.excerpt
       else if post.content
+        - var abstract = get_post_abstract(post)
         - var br = 0
         - for (var i = 0; i < 5; ++i) {
           - br = post.content.indexOf('\n',br+1)
@@ -34,7 +35,10 @@ block content
           if br >150
             - break
         - }
-        if br < 0
+        if abstract
+          .post-content
+            != abstract
+        else if br < 0
           .post-content
             != post.content
         else

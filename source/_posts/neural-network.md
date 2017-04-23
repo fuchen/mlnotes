@@ -4,8 +4,10 @@ date: 2017-04-20 20:02:46
 category: 机器学习
 tags: ["神经网络", "反向传播"]
 ---
-下图是一个4层的神经网络:
+{% abstract_start %}
 {% asset_img "Neural_Network.svg" "一个4层神经网络（2个隐层）"%}
+{% abstract_stop %}
+
 
 假设 `$l$` 层有 `$m$` 个节点作出输入单元，`$l+1$` 层有 `$n$` 个节点作为输出单元，则:
 {% math %}
@@ -33,7 +35,6 @@ w^{(l)} = \left[
   &z^{(3)} = w^{(3)} a^{(3)} & h(w, x) = a^{(4)} = g(z^{(3)})
 \end{align}
 {% endmath %}
-
 
 
 ### 反向传播过程(Back propagation):
